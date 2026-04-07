@@ -1,6 +1,6 @@
 import streamlit as st
-import pyodbc
 import pandas as pd
+from dashboard.db import get_connection
 
 # =========================
 # CONFIGURACION
@@ -11,20 +11,7 @@ st.set_page_config(
     page_icon="📊"
 )
 
-# =========================
-# CONEXION BD
-# =========================
-def get_connection():
-    return pyodbc.connect(
-        "DRIVER={ODBC Driver 17 for SQL Server};"
-        "Server=DESKTOP-QC47F12;"
-        "Database=TerminalTarijaGold;"
-        "Trusted_Connection=yes;"
-    )
 
-# =========================
-# ESTILOS PRO
-# =========================
 st.markdown("""
 <style>
 .main {

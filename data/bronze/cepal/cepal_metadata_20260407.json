@@ -3,11 +3,11 @@
     "name": "uneclac cepalstat api",
     "version": "1.9.13",
     "success": true,
-    "machine": "01",
+    "machine": "03",
     "context": "public",
     "code": 200,
     "message": "",
-    "timestamp": 1775447967
+    "timestamp": 1775571335
   },
   "body": {
     "metadata": {
@@ -27,7 +27,7 @@
   },
   "footer": {
     "records": 1,
-    "elapsed_time": "0.02178",
+    "elapsed_time": "0.02141",
     "ip": "181.115.161.84",
     "query": "http://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/3906/metadata?lang=es&format=json"
   }

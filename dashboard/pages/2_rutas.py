@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pyodbc
+from dashboard.db import get_connection, get_connection2
 import plotly.express as px
 
 st.set_page_config(page_title=" Rutas - Terminal Tarija", layout="wide", page_icon="🛣️")
@@ -105,12 +105,7 @@ hr {
 st.title(" Rutas")
 
 # CONEXIÓN
-conn = pyodbc.connect(
-    "DRIVER={ODBC Driver 17 for SQL Server};"
-    "SERVER=DESKTOP-QC47F12;"
-    "DATABASE=TerminalTarijaDB;"
-    "Trusted_Connection=yes;"
-)
+conn = get_connection2()
 
 # DATA
 df = pd.read_sql("""

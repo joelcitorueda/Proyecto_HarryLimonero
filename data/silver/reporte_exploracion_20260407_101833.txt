@@ -1,6 +1,6 @@
 ============================================================
 REPORTE DE EXPLORACIÓN — CAPA BRONZE
-Fecha: 2026-04-06 20:34:55
+Fecha: 2026-04-07 10:18:33
 Proyecto BI — Terminal de Buses de Tarija
 ============================================================
 
@@ -16,7 +16,7 @@ FUENTE 1: SQL SERVER — TerminalTarijaDB
     → Ninguna columna tiene nulos
 
   PROBLEMAS DE FORMATO EN TEXTOS:
-    → ciudad                              espacios_extra=   0  mayusculas_mixtas=   2
+    → ciudad                              espacios_extra=   0  mayusculas_mixtas=   1
 
   TIPOS DE DATOS:
     → id_ciudad                           int64
@@ -40,7 +40,7 @@ FUENTE 1: SQL SERVER — TerminalTarijaDB
     → Ninguna columna tiene nulos
 
   PROBLEMAS DE FORMATO EN TEXTOS:
-    → nombre_empresa                      espacios_extra=   0  mayusculas_mixtas=   4
+    → nombre_empresa                      espacios_extra=   0  mayusculas_mixtas=   2
 
   TIPOS DE DATOS:
     → id_empresa                          int64
@@ -98,7 +98,7 @@ FUENTE 1: SQL SERVER — TerminalTarijaDB
     → email                                   8 nulos (40.0%)
 
   PROBLEMAS DE FORMATO EN TEXTOS:
-    → apellido                            espacios_extra=   0  mayusculas_mixtas=   4
+    → No se detectaron problemas en columnas de texto
 
   TIPOS DE DATOS:
     → id_pasajero                         int64
@@ -179,11 +179,11 @@ FUENTE 1: SQL SERVER — TerminalTarijaDB
 
   NULOS:
     → nombre_pasajero_registrado             60 nulos (5.0%)
-    → observaciones                         355 nulos (29.6%)
+    → observaciones                         364 nulos (30.3%)
 
   PROBLEMAS DE FORMATO EN TEXTOS:
     → nombre_pasajero_registrado          espacios_extra=  60  mayusculas_mixtas= 108
-    → observaciones                       espacios_extra=   0  mayusculas_mixtas= 845
+    → observaciones                       espacios_extra=   0  mayusculas_mixtas= 836
 
   TIPOS DE DATOS:
     → id_venta                            int64
@@ -203,17 +203,17 @@ FUENTE 1: SQL SERVER — TerminalTarijaDB
 
   ESTADÍSTICAS NUMÉRICAS:
     → id_venta                       min=1.0  max=1200.0  media=600.5
-    → id_itinerario                  min=1.0  max=15.0  media=7.88
-    → id_pasajero                    min=1.0  max=20.0  media=10.62
-    → id_ruta                        min=1.0  max=11.0  media=4.5
-    → id_empresa                     min=1.0  max=13.0  media=6.33
-    → numero_asiento                 min=1.0  max=46.0  media=23.25
-    → monto_pagado                   min=8.08  max=171.0  media=85.84
-    → descuento_aplicado             min=0.0  max=20.0  media=3.26
+    → id_itinerario                  min=1.0  max=15.0  media=8.05
+    → id_pasajero                    min=1.0  max=20.0  media=10.54
+    → id_ruta                        min=1.0  max=11.0  media=4.67
+    → id_empresa                     min=1.0  max=13.0  media=6.39
+    → numero_asiento                 min=1.0  max=46.0  media=23.14
+    → monto_pagado                   min=6.8  max=171.0  media=84.64
+    → descuento_aplicado             min=0.0  max=20.0  media=3.32
 
   ANÁLISIS DETALLADO ventas_pasajes:
   → Montos <= 0          : 0 registros
-  → Rango montos         : Bs. 8.08 — Bs. 171.00
+  → Rango montos         : Bs. 6.80 — Bs. 171.00
   → nombre NULL          : 60 registros
   → doble espacio        : 60 registros
   → mayúsculas mixtas    : 108 registros
@@ -221,14 +221,14 @@ FUENTE 1: SQL SERVER — TerminalTarijaDB
 
   Distribución estado_pasaje:
     → Viajado           961 (80.1%)
-    → Cancelado         222 (18.5%)
-    → Confirmado         17 (1.4%)
+    → Cancelado         218 (18.2%)
+    → Confirmado         21 (1.8%)
 
   Distribución canal_venta:
-    → Agente            315 (26.2%)
-    → Ventanilla        304 (25.3%)
-    → Telefono          302 (25.2%)
-    → Web               279 (23.2%)
+    → Web               331 (27.6%)
+    → Ventanilla        310 (25.8%)
+    → Agente            295 (24.6%)
+    → Telefono          264 (22.0%)
 
 
 FUENTE 2: CEPALSTAT — Indicador 3906

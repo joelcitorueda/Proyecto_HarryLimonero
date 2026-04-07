@@ -3,11 +3,11 @@
     "name": "uneclac cepalstat api",
     "version": "1.9.13",
     "success": true,
-    "machine": "02",
+    "machine": "01",
     "context": "public",
     "code": 200,
     "message": "",
-    "timestamp": 1775447967
+    "timestamp": 1775571336
   },
   "body": {
     "metadata": {
@@ -546,7 +546,7 @@
     "credits": [
       {
         "id": 0,
-        "description": "2026-04-05"
+        "description": "2026-04-07"
       },
       {
         "id": 1,
@@ -564,7 +564,7 @@
   },
   "footer": {
     "records": 36,
-    "elapsed_time": "0.07096",
+    "elapsed_time": "0.06361",
     "ip": "181.115.161.84",
     "query": "http://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/3906/data?lang=es&format=json&members=221,216,244,224,222,242,29185,29187,29188,29189,29190,29191,29192,74391,74755,74756,74757&in=1&path=0"
   }

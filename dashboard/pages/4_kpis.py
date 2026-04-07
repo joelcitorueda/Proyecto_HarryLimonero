@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pyodbc
+from dashboard.db import get_connection
 import plotly.express as px
 
 st.set_page_config(page_title="KPIs Estratégicos y OKR - Terminal Tarija", layout="wide")
@@ -91,12 +91,7 @@ st.title("KPIs Estrategicos y OKR")
 st.markdown("*Sistema de Inteligencia de Negocios - Terminal de Buses de Tarija*")
 
 # CONEXION A GOLD
-conn = pyodbc.connect(
-    "DRIVER={ODBC Driver 17 for SQL Server};"
-    "SERVER=DESKTOP-QC47F12;"
-    "DATABASE=TerminalTarijaGold;"
-    "Trusted_Connection=yes;"
-)
+conn = get_connection()
 
 # ============================================================================
 # RESUMEN EJECUTIVO (Tarjetas principales)

@@ -1,6 +1,6 @@
 ==================================================
 RESUMEN DE EXTRACCIÓN BRONZE - SQL SERVER
-Fecha y hora: 2026-04-06 20:34:41
+Fecha y hora: 2026-04-07 10:15:36
 Base de datos: TerminalTarijaDB
 ==================================================
 

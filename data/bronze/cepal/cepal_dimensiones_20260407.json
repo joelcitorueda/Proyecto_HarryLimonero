@@ -3,11 +3,11 @@
     "name": "uneclac cepalstat api",
     "version": "1.9.13",
     "success": true,
-    "machine": "03",
+    "machine": "02",
     "context": "public",
     "code": 200,
     "message": "",
-    "timestamp": 1775447969
+    "timestamp": 1775571337
   },
   "body": {
     "dimensions": [
@@ -375,7 +375,7 @@
   },
   "footer": {
     "records": 359,
-    "elapsed_time": "0.04802",
+    "elapsed_time": "0.04662",
     "ip": "181.115.161.84",
     "query": "http://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/3906/dimensions?lang=es&format=json&in=1&path=0"
   }
