@@ -1,0 +1,16 @@
+﻿id_empresa,nombre_empresa,nit,telefono,estado,tipo,ciudad_origen_id,capacidad_flota_total,fecha_registro
+1,Osastur Tarija,1023456789,46643210,Activa,Flota,1,180,2010-03-15
+2,Trans Bolivar,2034567890,46641234,Activa,Flota,1,220,2008-07-20
+3,Flota Tarija Scz,3045678901,46645678,Activa,Flota,1,200,2012-01-10
+4,Cooperativa Bermejo,4056789012,46642222,Activa,Trufi,1,90,2015-06-05
+5,Trans Chaco Sur,5067890123,46643333,Activa,Flota,1,160,2009-11-30
+6,Microbus Yacuiba Express,6078901234,46644444,Activa,Microbus,10,75,2016-02-14
+7,Flota Norte Integrado,7089012345,22334455,Activa,Flota,2,240,2007-08-22
+8,Trans Andino,8090123456,44556677,Activa,Flota,3,210,2011-04-18
+9,Cooperativa Frontera,9001234567,46646666,Suspendida,Trufi,11,60,2018-09-01
+10,Expreso Del Sur,1112345678,46647777,Activa,Flota,1,195,2013-05-27
+11,Trans Chuquisaca,2223456789,46418888,Activa,Flota,5,170,2014-12-03
+12,Flota Oruro Tarija,3334567890,25219999,Activa,Flota,6,155,2010-10-10
+13,Minibus Valle Central,4445678901,46641111,Activa,Microbus,1,50,2019-03-22
+14,Trans Villaz?N,5556789012,46622222,Inhabilitada,Flota,20,130,2006-07-15
+15,Servicio Rapido Tarije?O,6667890123,46633333,Activa,Mixta,1,110,2017-11-08

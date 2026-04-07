@@ -1,0 +1,23 @@
+
+---- URL 1 — Bolivia, solo transporte vial (la principal) ----
+
+https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/3906/data?lang=es&format=json&members=221,29185,29187,29188,29189,29190,29191,29192,74391,74757&in=1&path=0
+
+
+---- URL 2 — Bolivia, todos los modos de transporte ----
+
+https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/3906/data?lang=es&format=json&members=221,29185,29187,29188,29189,29190,29191,29192,74391,74755,74756,74757&in=1&path=0
+
+
+---- URL 3 — Comparación regional (Bolivia + Argentina + Perú + Chile + Brasil), transporte vial ----
+
+https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/3906/data?lang=es&format=json&members=221,216,244,224,222,29185,29187,29188,29189,29190,29191,29192,74391,74757&in=1&path=0
+
+
+---- Indicador principal — transporte aéreo Bolivia (contexto de movilidad general) ----
+
+https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/3906/data?lang=es&format=json&members=221,29185,29187,29188,29189,29190,29191,29192,74391,74755,74756,74757&in=1&path=0
+
+
+---- Indicador complementario — comparación regional con países vecinos (todos los modos disponibles) ----
+https://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/3906/data?lang=es&format=json&members=216,244,224,222,29185,29187,29188,29189,29190,29191,29192,74391,74755,74756,74757&in=1&path=0

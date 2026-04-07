@@ -1,0 +1,21 @@
+﻿id_pasajero,nombre,apellido,ci,telefono,email,ciudad_id,nacionalidad,fecha_nacimiento
+1,Juan Carlos,Mamani Quispe,7123456,77123456,jmamani@gmail.com,1,Boliviana,1990-05-12
+2,Maria Elena,Flores Tarqui,6234567,66234567,mflores@hotmail.com,1,Boliviana,1985-08-23
+3,Pedro Antonio,Gutierrez Vaca,5345678,55345678,pgutierrez@gmail.com,2,Boliviana,1992-11-30
+4,Ana Luisa,Condori Huanca,4456789,44456789,,1,Boliviana,1988-03-17
+5,Carlos Alberto,Vargas Torrez,3567890,33567890,cvargas@gmail.com,3,Boliviana,1995-07-04
+6,Rosa Angelica,Choque Limachi,2678901,22678901,,1,Boliviana,1982-12-09
+7,Miguel Angel,Quispe Mamani,1789012,11789012,mquispe@yahoo.com,4,Boliviana,1998-02-28
+8,Sandra Patricia,Torrez Mendoza,8890123,88890123,storrez@gmail.com,1,Boliviana,1991-09-15
+9,Luis Fernando,Mendoza Arce,9901234,99901234,,5,Boliviana,1987-06-21
+10,Gloria Beatriz,Arce Villanueva,1012345,10123456,garce@gmail.com,1,Boliviana,1993-04-03
+11,Roberto Carlos,Villanueva Ramos,1123456,11234567,,2,Boliviana,1996-10-18
+12,Patricia Isabel,Ramos Aguilar,1234560,12345678,pramos@hotmail.com,1,Boliviana,1984-01-25
+13,Fernando Jose,Aguilar Salinas,1345671,13456789,,6,Boliviana,1990-07-30
+14,Claudia Veronica,Salinas Iba?Ez,1456782,14567890,csalinas@gmail.com,1,Boliviana,1997-11-14
+15,Jorge Eduardo,Iba?Ez Castro,1567893,15678901,,7,Boliviana,1983-05-07
+16,Monica Cecilia,Castro Ponce,1678904,16789012,mcastro@gmail.com,1,Boliviana,1994-08-19
+17,Ricardo Ernesto,Ponce Monta?O,1789015,17890123,,1,Argentina,1989-03-22
+18,Silvia Rosario,Monta?O Perez,1890126,18901234,smontano@yahoo.com,10,Boliviana,1986-12-05
+19,Daniel Alejandro,Perez Oporto,1901237,19012345,,11,Boliviana,1999-06-16
+20,Carmen Rosa,Oporto Flores,2012348,20123456,coporto@gmail.com,1,Boliviana,1981-09-28

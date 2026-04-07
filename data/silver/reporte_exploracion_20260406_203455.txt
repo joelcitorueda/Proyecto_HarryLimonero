@@ -1,0 +1,271 @@
+============================================================
+REPORTE DE EXPLORACIÓN — CAPA BRONZE
+Fecha: 2026-04-06 20:34:55
+Proyecto BI — Terminal de Buses de Tarija
+============================================================
+
+
+FUENTE 1: SQL SERVER — TerminalTarijaDB
+
+============================================================
+  TABLA: GEOGRAFIA
+============================================================
+  Registros : 20 | Columnas: 6
+
+  NULOS:
+    → Ninguna columna tiene nulos
+
+  PROBLEMAS DE FORMATO EN TEXTOS:
+    → ciudad                              espacios_extra=   0  mayusculas_mixtas=   2
+
+  TIPOS DE DATOS:
+    → id_ciudad                           int64
+    → ciudad                              str
+    → departamento                        str
+    → es_fronteriza                       bool
+    → latitud                             float64
+    → longitud                            float64
+
+  ESTADÍSTICAS NUMÉRICAS:
+    → id_ciudad                      min=1.0  max=20.0  media=10.5
+    → latitud                        min=-22.73  max=-11.03  media=-19.07
+    → longitud                       min=-68.75  max=-62.03  media=-64.99
+
+============================================================
+  TABLA: EMPRESAS
+============================================================
+  Registros : 15 | Columnas: 9
+
+  NULOS:
+    → Ninguna columna tiene nulos
+
+  PROBLEMAS DE FORMATO EN TEXTOS:
+    → nombre_empresa                      espacios_extra=   0  mayusculas_mixtas=   4
+
+  TIPOS DE DATOS:
+    → id_empresa                          int64
+    → nombre_empresa                      str
+    → nit                                 int64
+    → telefono                            int64
+    → estado                              str
+    → tipo                                str
+    → ciudad_origen_id                    int64
+    → capacidad_flota_total               int64
+    → fecha_registro                      str
+
+  ESTADÍSTICAS NUMÉRICAS:
+    → id_empresa                     min=1.0  max=15.0  media=8.0
+    → nit                            min=1023456789.0  max=9001234567.0  media=4588558847.33
+    → telefono                       min=22334455.0  max=46647777.0  media=43438749.93
+    → ciudad_origen_id               min=1.0  max=20.0  media=4.33
+    → capacidad_flota_total          min=50.0  max=240.0  media=149.67
+
+============================================================
+  TABLA: RUTAS
+============================================================
+  Registros : 15 | Columnas: 8
+
+  NULOS:
+    → Ninguna columna tiene nulos
+
+  PROBLEMAS DE FORMATO EN TEXTOS:
+    → No se detectaron problemas en columnas de texto
+
+  TIPOS DE DATOS:
+    → id_ruta                             int64
+    → ciudad_origen_id                    int64
+    → ciudad_destino_id                   int64
+    → distancia_km                        int64
+    → duracion_horas                      float64
+    → tipo_corredor                       str
+    → tarifa_base                         float64
+    → activa                              bool
+
+  ESTADÍSTICAS NUMÉRICAS:
+    → id_ruta                        min=1.0  max=15.0  media=8.0
+    → ciudad_origen_id               min=1.0  max=5.0  media=1.33
+    → ciudad_destino_id              min=2.0  max=20.0  media=8.8
+    → distancia_km                   min=25.0  max=900.0  media=386.67
+    → duracion_horas                 min=0.5  max=16.0  media=7.21
+    → tarifa_base                    min=10.0  max=160.0  media=75.47
+
+============================================================
+  TABLA: PASAJEROS
+============================================================
+  Registros : 20 | Columnas: 9
+
+  NULOS:
+    → email                                   8 nulos (40.0%)
+
+  PROBLEMAS DE FORMATO EN TEXTOS:
+    → apellido                            espacios_extra=   0  mayusculas_mixtas=   4
+
+  TIPOS DE DATOS:
+    → id_pasajero                         int64
+    → nombre                              str
+    → apellido                            str
+    → ci                                  int64
+    → telefono                            int64
+    → email                               str
+    → ciudad_id                           int64
+    → nacionalidad                        str
+    → fecha_nacimiento                    str
+
+  ESTADÍSTICAS NUMÉRICAS:
+    → id_pasajero                    min=1.0  max=20.0  media=10.5
+    → ci                             min=1012345.0  max=9901234.0  media=3349999.35
+    → telefono                       min=10123456.0  max=99901234.0  media=33505555.05
+    → ciudad_id                      min=1.0  max=11.0  media=3.05
+
+============================================================
+  TABLA: UNIDADES_FLOTA
+============================================================
+  Registros : 20 | Columnas: 9
+
+  NULOS:
+    → Ninguna columna tiene nulos
+
+  PROBLEMAS DE FORMATO EN TEXTOS:
+    → tipo_servicio                       espacios_extra=   0  mayusculas_mixtas=   7
+
+  TIPOS DE DATOS:
+    → id_unidad                           int64
+    → id_empresa                          int64
+    → placa                               str
+    → marca                               str
+    → modelo                              str
+    → anio_fabricacion                    int64
+    → capacidad_asientos                  int64
+    → tipo_servicio                       str
+    → estado_unidad                       str
+
+  ESTADÍSTICAS NUMÉRICAS:
+    → id_unidad                      min=1.0  max=20.0  media=10.5
+    → id_empresa                     min=1.0  max=15.0  media=6.15
+    → anio_fabricacion               min=2014.0  max=2021.0  media=2017.75
+    → capacidad_asientos             min=15.0  max=46.0  media=39.45
+
+============================================================
+  TABLA: ITINERARIOS
+============================================================
+  Registros : 15 | Columnas: 8
+
+  NULOS:
+    → Ninguna columna tiene nulos
+
+  PROBLEMAS DE FORMATO EN TEXTOS:
+    → No se detectaron problemas en columnas de texto
+
+  TIPOS DE DATOS:
+    → id_itinerario                       int64
+    → id_ruta                             int64
+    → id_empresa                          int64
+    → id_unidad                           int64
+    → hora_salida                         str
+    → dias_operacion                      str
+    → frecuencia                          str
+    → activo                              bool
+
+  ESTADÍSTICAS NUMÉRICAS:
+    → id_itinerario                  min=1.0  max=15.0  media=8.0
+    → id_ruta                        min=1.0  max=11.0  media=4.6
+    → id_empresa                     min=1.0  max=13.0  media=6.4
+    → id_unidad                      min=1.0  max=19.0  media=10.8
+
+============================================================
+  TABLA: VENTAS_PASAJES
+============================================================
+  Registros : 1200 | Columnas: 14
+
+  NULOS:
+    → nombre_pasajero_registrado             60 nulos (5.0%)
+    → observaciones                         355 nulos (29.6%)
+
+  PROBLEMAS DE FORMATO EN TEXTOS:
+    → nombre_pasajero_registrado          espacios_extra=  60  mayusculas_mixtas= 108
+    → observaciones                       espacios_extra=   0  mayusculas_mixtas= 845
+
+  TIPOS DE DATOS:
+    → id_venta                            int64
+    → id_itinerario                       int64
+    → id_pasajero                         int64
+    → id_ruta                             int64
+    → id_empresa                          int64
+    → fecha_venta                         str
+    → fecha_viaje                         str
+    → numero_asiento                      int64
+    → monto_pagado                        float64
+    → canal_venta                         str
+    → estado_pasaje                       str
+    → descuento_aplicado                  float64
+    → nombre_pasajero_registrado          str
+    → observaciones                       str
+
+  ESTADÍSTICAS NUMÉRICAS:
+    → id_venta                       min=1.0  max=1200.0  media=600.5
+    → id_itinerario                  min=1.0  max=15.0  media=7.88
+    → id_pasajero                    min=1.0  max=20.0  media=10.62
+    → id_ruta                        min=1.0  max=11.0  media=4.5
+    → id_empresa                     min=1.0  max=13.0  media=6.33
+    → numero_asiento                 min=1.0  max=46.0  media=23.25
+    → monto_pagado                   min=8.08  max=171.0  media=85.84
+    → descuento_aplicado             min=0.0  max=20.0  media=3.26
+
+  ANÁLISIS DETALLADO ventas_pasajes:
+  → Montos <= 0          : 0 registros
+  → Rango montos         : Bs. 8.08 — Bs. 171.00
+  → nombre NULL          : 60 registros
+  → doble espacio        : 60 registros
+  → mayúsculas mixtas    : 108 registros
+  → TOTAL datos sucios   : ~228 (19.0%) ← evidencia capa Silver
+
+  Distribución estado_pasaje:
+    → Viajado           961 (80.1%)
+    → Cancelado         222 (18.5%)
+    → Confirmado         17 (1.4%)
+
+  Distribución canal_venta:
+    → Agente            315 (26.2%)
+    → Ventanilla        304 (25.3%)
+    → Telefono          302 (25.2%)
+    → Web               279 (23.2%)
+
+
+FUENTE 2: CEPALSTAT — Indicador 3906
+
+============================================================
+  TABLA: CEPAL_TRANSPORTE_PASAJEROS
+============================================================
+  Registros : 36 | Columnas: 13
+
+  NULOS:
+    → Ninguna columna tiene nulos
+
+  PROBLEMAS DE FORMATO EN TEXTOS:
+    → indicador_nombre                    espacios_extra=   0  mayusculas_mixtas=  36
+    → pais_nombre                         espacios_extra=   0  mayusculas_mixtas=   6
+    → modo_transporte                     espacios_extra=   0  mayusculas_mixtas=  36
+
+  TIPOS DE DATOS:
+    → indicador_id                        int64
+    → indicador_nombre                    str
+    → pais_id                             int64
+    → pais_nombre                         str
+    → iso3                                str
+    → anio_id                             int64
+    → anio                                int64
+    → modo_id                             int64
+    → modo_transporte                     str
+    → valor                               float64
+    → unidad                              str
+    → fuente_id                           int64
+    → fecha_extraccion                    str
+
+  ESTADÍSTICAS NUMÉRICAS:
+    → indicador_id                   min=3906.0  max=3906.0  media=3906.0
+    → pais_id                        min=216.0  max=244.0  media=228.17
+    → anio_id                        min=29187.0  max=29192.0  media=29189.5
+    → anio                           min=2017.0  max=2022.0  media=2019.5
+    → modo_id                        min=74755.0  max=74755.0  media=74755.0
+    → valor                          min=127987522.0  max=135078344890.0  media=30977127848.96
+    → fuente_id                      min=3760.0  max=3760.0  media=3760.0

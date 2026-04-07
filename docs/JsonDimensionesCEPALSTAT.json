@@ -1,0 +1,382 @@
+{
+  "header": {
+    "name": "uneclac cepalstat api",
+    "version": "1.9.13",
+    "success": true,
+    "machine": "03",
+    "context": "public",
+    "code": 200,
+    "message": "",
+    "timestamp": 1775443858
+  },
+  "body": {
+    "dimensions": [
+      {
+        "name": "País__ESTANDAR",
+        "id": 208,
+        "order": 1,
+        "position": 1,
+        "members": [
+          {
+            "name": "América Central",
+            "id": 209,
+            "in": 1,
+            "order": 421,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "América del Sur",
+            "id": 210,
+            "in": 1,
+            "order": 423,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "América Latina y el Caribe",
+            "id": 212,
+            "in": 1,
+            "order": 410,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Antigua y Barbuda",
+            "id": 214,
+            "in": 1,
+            "order": 20,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Argentina",
+            "id": 216,
+            "in": 1,
+            "order": 40,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Aruba",
+            "id": 217,
+            "in": 1,
+            "order": 50,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Bahamas",
+            "id": 218,
+            "in": 1,
+            "order": 60,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Belice",
+            "id": 220,
+            "in": 1,
+            "order": 80,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Bolivia (Estado Plurinacional de)",
+            "id": 221,
+            "in": 1,
+            "order": 90,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Brasil",
+            "id": 222,
+            "in": 1,
+            "order": 100,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Chile",
+            "id": 224,
+            "in": 1,
+            "order": 110,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Colombia",
+            "id": 225,
+            "in": 1,
+            "order": 120,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Costa Rica",
+            "id": 226,
+            "in": 1,
+            "order": 130,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Cuba",
+            "id": 249,
+            "in": 1,
+            "order": 140,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Ecuador",
+            "id": 229,
+            "in": 1,
+            "order": 160,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "El Caribe",
+            "id": 223,
+            "in": 1,
+            "order": 430,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "El Salvador",
+            "id": 230,
+            "in": 1,
+            "order": 170,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Guatemala",
+            "id": 235,
+            "in": 1,
+            "order": 190,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Guyana",
+            "id": 237,
+            "in": 1,
+            "order": 200,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Haití",
+            "id": 238,
+            "in": 1,
+            "order": 210,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Honduras",
+            "id": 239,
+            "in": 1,
+            "order": 212,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Jamaica",
+            "id": 246,
+            "in": 1,
+            "order": 250,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "México",
+            "id": 233,
+            "in": 1,
+            "order": 265,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Panamá",
+            "id": 241,
+            "in": 1,
+            "order": 290,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Paraguay",
+            "id": 242,
+            "in": 1,
+            "order": 300,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Perú",
+            "id": 244,
+            "in": 1,
+            "order": 310,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "República Dominicana",
+            "id": 264,
+            "in": 1,
+            "order": 330,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Suriname",
+            "id": 263,
+            "in": 1,
+            "order": 370,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Trinidad y Tabago",
+            "id": 256,
+            "in": 1,
+            "order": 380,
+            "parent": 208,
+            "selected": 0
+          },
+          {
+            "name": "Venezuela (República Bolivariana de)",
+            "id": 259,
+            "in": 1,
+            "order": 400,
+            "parent": 208,
+            "selected": 0
+          }
+        ]
+      },
+      {
+        "name": "Años__ESTANDAR",
+        "id": 29117,
+        "order": 1,
+        "position": 1,
+        "members": [
+          {
+            "name": "2015",
+            "id": 29185,
+            "in": 1,
+            "order": 2015,
+            "parent": 29117,
+            "selected": 0
+          },
+          {
+            "name": "2017",
+            "id": 29187,
+            "in": 1,
+            "order": 2017,
+            "parent": 29117,
+            "selected": 0
+          },
+          {
+            "name": "2018",
+            "id": 29188,
+            "in": 1,
+            "order": 2018,
+            "parent": 29117,
+            "selected": 0
+          },
+          {
+            "name": "2019",
+            "id": 29189,
+            "in": 1,
+            "order": 2019,
+            "parent": 29117,
+            "selected": 0
+          },
+          {
+            "name": "2020",
+            "id": 29190,
+            "in": 1,
+            "order": 2020,
+            "parent": 29117,
+            "selected": 0
+          },
+          {
+            "name": "2021",
+            "id": 29191,
+            "in": 1,
+            "order": 2021,
+            "parent": 29117,
+            "selected": 0
+          },
+          {
+            "name": "2022",
+            "id": 29192,
+            "in": 1,
+            "order": 2022,
+            "parent": 29117,
+            "selected": 0
+          }
+        ]
+      },
+      {
+        "name": "Tipo de informe",
+        "id": 74389,
+        "order": 1,
+        "position": 1,
+        "members": [
+          {
+            "name": "Global",
+            "id": 74391,
+            "in": 1,
+            "order": 20,
+            "parent": 74389,
+            "selected": 0
+          }
+        ]
+      },
+      {
+        "name": "Modo de transporte",
+        "id": 74754,
+        "order": 1,
+        "position": 1,
+        "members": [
+          {
+            "name": "Transporte aéreo",
+            "id": 74755,
+            "in": 1,
+            "order": 10,
+            "parent": 74754,
+            "selected": 0
+          },
+          {
+            "name": "Transporte ferroviario",
+            "id": 74756,
+            "in": 1,
+            "order": 20,
+            "parent": 74754,
+            "selected": 0
+          },
+          {
+            "name": "Transporte vial",
+            "id": 74757,
+            "in": 1,
+            "order": 30,
+            "parent": 74754,
+            "selected": 0
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "records": 359,
+    "elapsed_time": "0.04981",
+    "ip": "181.115.161.84",
+    "query": "http://api-cepalstat.cepal.org/cepalstat/api/v1/indicator/3906/dimensions?lang=es&format=json&in=1&path=0"
+  }
+}
