@@ -18,9 +18,7 @@ pip install pyodbc pandas numpy requests sqlalchemy streamlit plotly pytest stre
 
 ---- Cadena de conexion Capa Bronze archivo extract_sql.py ----
 
-# ──────────────────────────────────────────────
-# CONFIGURACIÓN DE CONEXIÓN
-# ──────────────────────────────────────────────
+
 CONNECTION_STRING = (
     "DRIVER={ODBC Driver 17 for SQL Server};"
     "Server=localhost;"
@@ -41,7 +39,6 @@ python silver/run_silver.py
 
 ---- Cadena de conexion Capa Gold archivo load_gold.py ----
 
-# Cadena de conexión SQLAlchemy para SQL Server con Windows Auth
 ENGINE_GOLD = (
     "mssql+pyodbc://localhost/TerminalTarijaGold"
     "?driver=ODBC+Driver+17+for+SQL+Server"
@@ -80,7 +77,6 @@ def get_connection2():
         f"Database={{TerminalTarijaDB}};"
         "Trusted_Connection=yes;"
     )
-
 
 
 ---- DASHBOARD ----
